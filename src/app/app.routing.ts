@@ -4,7 +4,11 @@ import { MainComponent  } from "./main/main.component"
 
 export const routes : Routes = [{
     path:'',
-    component:MainComponent
+    component:MainComponent,
+    children:[{
+        path:'myapp',
+        loadChildren:'./myapp/myapp.module#MyAppModule'
+    }]
 }]
 @NgModule({
     imports:[RouterModule.forRoot(routes)],

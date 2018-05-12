@@ -8,5 +8,12 @@ import { Router } from "@angular/router";
 })
 export class MainComponent{
 
+    constructor(private _router : Router){}
+
+    //________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+    QueryBuilder_Click(){
+        this._router.navigate(['/myapp/querybuilder']);
+    }
+    
 
 }//class
