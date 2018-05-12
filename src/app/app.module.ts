@@ -4,6 +4,15 @@ import { MainComponent } from "./main/main.component";
 import { AppRouting } from "./app.routing";
 import { provideRoutes } from "@angular/router";
 import { AppComponent } from "./app.component";
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { FormsModule } from "@angular/forms";
+
+import {
+      MatButtonModule,
+      MatMenuModule,
+      MatCommonModule,
+      MatDialogModule
+ } from "@angular/material";
 
 @NgModule({
   declarations: [
@@ -12,7 +21,13 @@ import { AppComponent } from "./app.component";
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRouting,
+    MatButtonModule,
+    MatMenuModule,
+    MatCommonModule,
+    BrowserAnimationsModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]
