@@ -443,7 +443,7 @@ export class DrawCanvasComponent implements OnInit {
                         myline.Title = "Line";
                         myline.Box_1_ID = i.Id;
                         myline.Box_1_PointIndex = re.PointIndex;
-                        myline.YesDrawEndArrow = true;
+                        // myline.YesDrawEndArrow = true;
                         this.currentObj = myline;
 
                         this.objects.push(myline);

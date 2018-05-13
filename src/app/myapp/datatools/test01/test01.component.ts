@@ -1,10 +1,6 @@
 import { Component, ViewChild } from "@angular/core";
 import { DrawCanvasComponent } from "../../common/material/drawcanvas/drawcanvas.component";
-import { BaseObject } from "../../common/shapeobject/BaseObject";
-import { BoxBase } from "../../common/shapeobject/BoxBase";
 import { FlowBox } from "../../common/shapeobject/FlowBox";
-import { LineBase } from "../../common/shapeobject/LineBase";
-import { SelectBox } from "../../common/shapeobject/SelectBox";
 
 
 @Component({

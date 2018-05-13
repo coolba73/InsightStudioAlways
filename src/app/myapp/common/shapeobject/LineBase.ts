@@ -83,7 +83,7 @@ export class LineBase extends BaseObject{
         ctx.stroke();
 
         if (this.YesDrawEndArrow)
-        this.DrawArrow2(ctx);
+            this.DrawArrow2(ctx);
 
         if (this.YesSelected || this.YesMouseOver)
         {
