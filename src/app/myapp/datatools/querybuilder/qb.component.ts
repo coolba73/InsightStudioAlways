@@ -1,4 +1,6 @@
-import { Component } from "@angular/core";
+import { Component, ViewChild } from "@angular/core";
+import { DrawCanvasComponent } from "../../common/material/drawcanvas/drawcanvas.component";
+import { FlowBox } from "../../common/shapeobject/FlowBox";
 
 @Component({
     selector:'querybuilder',
@@ -6,5 +8,18 @@ import { Component } from "@angular/core";
     styleUrls:['/qb.component.css']
 })
 export class QueryBuilderComponent{
+
+    @ViewChild("fcvs") finCanvas : DrawCanvasComponent;
+
+    //________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+    Add_Click(){
+        let flowBox = new FlowBox();
+
+        flowBox.x = 10;
+        flowBox.y = 10;
+
+        this.finCanvas.AddObject(flowBox);
+
+    }
 
 }

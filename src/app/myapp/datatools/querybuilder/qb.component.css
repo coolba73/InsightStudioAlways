@@ -1,0 +1,19 @@
+#qb_main {
+    height: 100%;
+    margin: 0 auto;
+    background:#ffffff;  
+    box-shadow: 0 0 1em rgb(116, 112, 112);
+  }
+  #qb_container {
+    height:80vh;
+    overflow: hidden;
+    margin: 10px;
+    box-shadow: 0 0 1em rgb(116, 112, 112);
+  }
+
+  #qb_container2 {
+    height:97%;
+    overflow: auto;
+    border: 1px solid #ebebeb;
+    margin: 10px;
+  }

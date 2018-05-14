@@ -8,12 +8,15 @@ import { MatButtonModule, MatCommonModule } from "@angular/material";
 
 @NgModule({
     imports:[
-        MyAppRouting
+        MyAppRouting,
+        MatButtonModule,
+        MatCommonModule
     ],
     declarations:[
         QueryBuilderComponent,
         Test01Component,
         DrawCanvasComponent,
+        
     ]
 })
 export class MyAppModule{}
