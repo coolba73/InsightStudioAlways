@@ -22,4 +22,4 @@ export class QueryBuilderComponent{
 
     }
 
-}
+}//class
