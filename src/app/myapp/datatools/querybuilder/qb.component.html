@@ -1,7 +1,7 @@
 <div style="margin-left: 10px">
     Query Builder
    <button mat-raised-button color="primary" (click)='Add_Click()' >Add Table</button> 
-   <button mat-raised-button color="primary"  style="margin-left: 5px" >View SQL</button>
+   <button mat-raised-button color="primary"  (click)='ViewSQL_Click()' style="margin-left: 5px" >View SQL</button>
    <button mat-raised-button color="primary"  style="margin-left: 5px" >Set Title</button>
    <button mat-raised-button color="primary"  style="margin-left: 5px" >Save</button>
    <button mat-raised-button color="warn" style="margin-left: 5px" >Run</button>
@@ -13,3 +13,6 @@
         <drawcanvas id='MyCanvas' #fcvs [MyId]="'qb_container2'" ></drawcanvas>
     </div>
 </div>
+
+
+

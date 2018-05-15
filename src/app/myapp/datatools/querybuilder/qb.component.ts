@@ -1,6 +1,8 @@
 import { Component, ViewChild } from "@angular/core";
 import { DrawCanvasComponent } from "../../common/material/drawcanvas/drawcanvas.component";
 import { FlowBox } from "../../common/shapeobject/FlowBox";
+import { MatDialog, MatDialogRef } from "@angular/material";
+import { TestDialogComponent } from "../../common/dialog/testdialog/testdialog.component";
 
 @Component({
     selector:'querybuilder',
@@ -10,6 +12,11 @@ import { FlowBox } from "../../common/shapeobject/FlowBox";
 export class QueryBuilderComponent{
 
     @ViewChild("fcvs") finCanvas : DrawCanvasComponent;
+    testDialogRef : MatDialogRef<TestDialogComponent>;
+
+
+    //________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+    constructor(private dialog:MatDialog){}
 
     //________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
     Add_Click(){
@@ -19,7 +26,13 @@ export class QueryBuilderComponent{
         flowBox.y = 10;
 
         this.finCanvas.AddObject(flowBox);
-
     }
+
+    //________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+    ViewSQL_Click(){
+
+        this.testDialogRef = this.dialog.open(TestDialogComponent );
+    }
+
 
 }//class
